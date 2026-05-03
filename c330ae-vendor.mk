@@ -275,7 +275,6 @@ PRODUCT_PACKAGES += \
     libvideoutils \
     libvpplibrary \
     vulkan.adreno \
-    camera.msm8937 \
     vendor.tinno.camera.vendorimageeffect@1.0-impl \
     libOmxVideoDSMode \
     libThrdPluginAdapter \
@@ -1684,11 +1683,9 @@ PRODUCT_PACKAGES += \
     libgcs-ipc \
     libgcs-osal \
     libgcs \
-    libhal_dbg \
     libjpegdhw \
     libjpegdmahw \
     libjpegehw \
-    libmm-qcamera \
     libmmcamera2_c2d_module \
     libmmcamera2_cpp_module \
     libmmcamera2_iface_modules \
@@ -1731,7 +1728,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_imx498_tsp_c330ae_eeprom \
     libmmcamera_imx499_sunwin_c330ae \
     libmmcamera_imx499_tsp_c330ae_eeprom \
-    libmmcamera_interface \
     libmmcamera_irs1645 \
     libmmcamera_isp_abf40 \
     libmmcamera_isp_bcc40 \
@@ -1834,7 +1830,6 @@ PRODUCT_PACKAGES += \
     libmmcamera_tuning \
     libmmcamera_tuning_lookup \
     libmmjpeg \
-    libmmjpeg_interface \
     libmmlib2d_interface \
     libmmqjpeg_codec \
     libmmqjpegdma \
@@ -1853,7 +1848,6 @@ PRODUCT_PACKAGES += \
     libplugin_statusdetect \
     libplugin_vidhance \
     libplugin_watermark \
-    libqomx_core \
     libqomx_jpegdec \
     libqomx_jpegenc \
     libqomx_jpegenc_pipe \
