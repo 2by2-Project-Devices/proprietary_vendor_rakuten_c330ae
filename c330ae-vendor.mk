@@ -1870,9 +1870,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.uceservice@2.3_vendor \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
-    android.hardware.keymaster@3.0-impl-qti \
     com.dsi.ant@1.0-impl \
-    keystore.msm8937 \
     vendor.qti.esepowermanager@1.0-impl \
     vendor.qti.gnss@4.0-impl \
     vendor.qti.hardware.alarm@1.0-impl \
@@ -1931,7 +1929,6 @@ PRODUCT_PACKAGES += \
     libizat_core \
     libjnihelper \
     libkeymasterdeviceutils \
-    libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
     liblearningmodule \
@@ -1956,6 +1953,7 @@ PRODUCT_PACKAGES += \
     libperfgluelayer \
     libperfioctl \
     libperipheral_client \
+    libqcbor \
     libqcc_file_agent \
     libqcmaputils \
     libqcrilFramework \
@@ -2261,7 +2259,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service-qti \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
-    android.hardware.keymaster@3.0-service-qti \
     android.hardware.keymaster@4.0-service-qti \
     android.hardware.nfc@1.2-service.cxd22xx \
     qcrild \
