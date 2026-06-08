@@ -235,7 +235,6 @@ PRODUCT_PACKAGES += \
     libq3dtools_esx \
     libC2D2 \
     libCB \
-    libMegviiFacepp \
     libMpeg4SwEncoder \
     libOmxG711Dec \
     libOmxSwVdec \
@@ -251,7 +250,6 @@ PRODUCT_PACKAGES += \
     libgsl \
     libllvm-glnext \
     libllvm-qcom \
-    libmegface-new \
     libmmcamera2_frame_algorithm \
     libmmcamera2_is \
     libmmcamera2_q3a_core \
@@ -2083,15 +2081,15 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0_vendor \
     vendor.qti.latency@2.1_vendor \
-    libFastRPC_AUE_Forward_skel \
-    libFastRPC_UTF_Forward_Qtc2_skel \
-    libapps_mem_heap \
-    libdspCV_skel \
-    libfastcvadsp \
-    libfastcvadsp_skel \
-    libscveBlobDescriptor_skel \
-    libscveObjectSegmentation_skel \
-    libscveT2T_skel \
+    vendor_lib_rfsa_adsp_libFastRPC_AUE_Forward_skel_so \
+    vendor_lib_rfsa_adsp_libFastRPC_UTF_Forward_Qtc2_skel_so \
+    vendor_lib_rfsa_adsp_libapps_mem_heap_so \
+    vendor_lib_rfsa_adsp_libdspCV_skel_so \
+    vendor_lib_rfsa_adsp_libfastcvadsp_so \
+    vendor_lib_rfsa_adsp_libfastcvadsp_skel_so \
+    vendor_lib_rfsa_adsp_libscveBlobDescriptor_skel_so \
+    vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so \
+    vendor_lib_rfsa_adsp_libscveT2T_skel_so \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \

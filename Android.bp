@@ -211,47 +211,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libMegviiFacepp",
-    owner: "rakuten",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libMegviiFacepp.so",
-            ],
-            shared_libs: [
-                "libmegface-new",
-                "liblog",
-                "libEGL",
-                "libGLESv2",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libMegviiFacepp.so",
-            ],
-            shared_libs: [
-                "libmegface-new",
-                "liblog",
-                "libEGL",
-                "libGLESv2",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libMpeg4SwEncoder",
     owner: "rakuten",
     strip: {
@@ -637,41 +596,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmegface-new",
-    owner: "rakuten",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmegface-new.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmegface-new.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
     prefer: true,
     soc_specific: true,
 }
@@ -1448,25 +1372,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libThrdPluginAdapter.so",
             ],
-            shared_libs: [
-                "libutils",
-                "libui",
-                "libcutils",
-                "android.hidl.memory@1.0",
-                "liblog",
-                "libplugin_param",
-                "libhidlbase",
-                "libxml2",
-                "libhardware",
-                "libMegviiFacepp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -42337,26 +42246,10 @@ cc_prebuilt_library_shared {
             srcs: [
                 "proprietary/vendor/lib/libplugin_facedetectplus.so",
             ],
-            shared_libs: [
-                "libmegface-new",
-                "libMegviiFacepp",
-                "libplugin_param",
-                "liblog",
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "libui",
-                "android.hidl.memory@1.0",
-                "libhidlbase",
-                "libThrdPluginAdapter",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -47404,7 +47297,7 @@ cc_prebuilt_library_shared {
 }
 
 prebuilt_rfsa {
-    name: "libFastRPC_AUE_Forward_skel",
+    name: "vendor_lib_rfsa_adsp_libFastRPC_AUE_Forward_skel_so",
     filename: "libFastRPC_AUE_Forward_skel.so",
     owner: "rakuten",
     src: "proprietary/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so",
@@ -47413,7 +47306,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libFastRPC_UTF_Forward_Qtc2_skel",
+    name: "vendor_lib_rfsa_adsp_libFastRPC_UTF_Forward_Qtc2_skel_so",
     filename: "libFastRPC_UTF_Forward_Qtc2_skel.so",
     owner: "rakuten",
     src: "proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so",
@@ -47422,7 +47315,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libapps_mem_heap",
+    name: "vendor_lib_rfsa_adsp_libapps_mem_heap_so",
     filename: "libapps_mem_heap.so",
     owner: "rakuten",
     src: "proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so",
@@ -47431,7 +47324,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libdspCV_skel",
+    name: "vendor_lib_rfsa_adsp_libdspCV_skel_so",
     filename: "libdspCV_skel.so",
     owner: "rakuten",
     src: "proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so",
@@ -47440,7 +47333,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libfastcvadsp",
+    name: "vendor_lib_rfsa_adsp_libfastcvadsp_so",
     filename: "libfastcvadsp.so",
     owner: "rakuten",
     src: "proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so",
@@ -47449,7 +47342,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libfastcvadsp_skel",
+    name: "vendor_lib_rfsa_adsp_libfastcvadsp_skel_so",
     filename: "libfastcvadsp_skel.so",
     owner: "rakuten",
     src: "proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so",
@@ -47458,7 +47351,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libscveBlobDescriptor_skel",
+    name: "vendor_lib_rfsa_adsp_libscveBlobDescriptor_skel_so",
     filename: "libscveBlobDescriptor_skel.so",
     owner: "rakuten",
     src: "proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so",
@@ -47467,7 +47360,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libscveObjectSegmentation_skel",
+    name: "vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so",
     filename: "libscveObjectSegmentation_skel.so",
     owner: "rakuten",
     src: "proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so",
@@ -47476,7 +47369,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-    name: "libscveT2T_skel",
+    name: "vendor_lib_rfsa_adsp_libscveT2T_skel_so",
     filename: "libscveT2T_skel.so",
     owner: "rakuten",
     src: "proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so",
@@ -50707,12 +50600,11 @@ cc_prebuilt_binary {
 
 cc_prebuilt_binary {
     name: "wcnss_service-c330ae",
-    stem: "wcnss_service",
     owner: "rakuten",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/wcnss_service",
+                "proprietary/vendor/bin/wcnss_service-c330ae",
             ],
         },
     },
